@@ -18,3 +18,24 @@ Often, due to the data structure, nodes may only be linked to from a single othe
 - Nodes contain data, which can be a variety of data types.
 - Contain links to other nodes. If a node has no links or they are just null. You have reached the end of the path you were folling.
 - Nodes can be orphaned if there are no existing link to them. 
+
+#### Nodes in Python
+
+We are going to use a basic node that contains data and one link to another. In python node's data will be specified when creating the node and immutable. Let's create a node in Python
+
+```python
+class Node:
+  def __init__(self, value, link_node=None):
+    self.value = value
+    self.link_node = link_node
+```
+
+Now we need methods to access the data and link within the node. To do this we will use two getters.
+
+```python
+def get_value(self):
+    return self.value
+  
+def get_link_node(self):
+    return self.link_node
+```
