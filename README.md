@@ -51,3 +51,24 @@ In this proces we are only allowing the value of the node to be set upon craetio
   def set_link_node(self,link_node):
      self.link_node = link_node
 ```
+
+Let's try to track some characters using python. First we need to add three nodes. 
+
+```python
+yacko = Node("likes to yak")
+wacko = Node("has a penchant for hoarding snacks")
+dot = Node("enjoys spending time in movie lots")
+```
+
+Now, let's give these nodes some responsabilities. Yacko can keep track of dot and dot can keep up with wacko. wacko can't keep track of anything though.
+
+```python
+dot.set_link_node(wacko)
+yacko.set_link_node(dot)
+
+dots_data = yacko.get_link_node().get_value()
+wackos_data = dot.get_link_node().get_value()
+
+print(dots_data)
+print(wackos_data)
+```
