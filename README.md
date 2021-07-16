@@ -60,7 +60,7 @@ wacko = Node("has a penchant for hoarding snacks")
 dot = Node("enjoys spending time in movie lots")
 ```
 
-Now, let's give these nodes some responsabilities. Yacko can keep track of dot and dot can keep up with wacko. wacko can't keep track of anything though.
+Now, let's give these nodes some responsabilities. Yacko can keep track of dot and dot can keep up with wacko. wacko can't keep track of anything though. Then ,create two new variables dots_data and wackos_data. Use them to get dot's value from yacko and get wacko's value from dot. Finally, print both variables.
 
 ```python
 dot.set_link_node(wacko)
