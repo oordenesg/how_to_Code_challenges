@@ -154,4 +154,23 @@ ll.insert_beginning(5675)
 ll.insert_beginning(90)
 print(ll.stringify_list())
 ```
+The final use case we mentioned was the ability to remove a node with a particular value. This is slightly more complex, since a couple of special cases need to be handled. Consider the followin case:
 
+**a -> b -> c**. If node b is removed from the list, the new list should be **a -> c**. In this case need to update the link within the a node to match what b was pointing to prior to removing it from the linked list.
+
+Lucky for us, in Python, nodes which are not referenced will be removed for us automatically. If we take care of the references, b will be “removed” for us in a process called Garbage Collection.
+
+```python
+  def remove_node(self, value_to_remove):
+    current_node = self.get_head_node()
+    if current_node.get_value() == value_to_remove:
+      self.head_node = current_node.get_next_node()
+    else:
+      while current_node:
+        next_node = current_node.get_next_node()
+        if next_node.get_value() == value_to_remove:
+          current_node.set_next_node(next_node.get_next_node())
+          current_node = None
+        else:
+          current_node = next_node
+```
