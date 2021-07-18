@@ -73,12 +73,19 @@ print(dots_data)
 print(wackos_data)
 ```
 
-A similar concept is **linked list**. This definition uses the same idea of nodes. As you might recall, each linked link is a sequential chain of nodes. So before we start building out the *linkedList* itself, we want to build up a *Node* class. Let's create an empty node class.
+A similar concept is **linked list**. This definition uses the same idea of nodes. As you might recall, each linked link is a sequential chain of nodes. So before we start building out the *linkedList* itself, we want to build up a *Node* class. Let's create an empty node class. Then define get_value() ad get_next_node() methods. These should return self.
 
 ```python
 class Node:
   def __init__(self,value,next_node = None):
     self.value = value
     self.next_node = next_node
-
+  
+  def get_value(self):
+    return self.value
+  
+  def get_next_node(self):
+    return self.next_node
 ```
+
+
