@@ -109,3 +109,24 @@ my_node = Node(44)
 print(my_node.get_value())
 ```
 
+After we've created the Node, we can star building the actual linked list. Depending on the end-use of the linked list, a variety of methods can be defined. For our use, we want to be able to:
+
+- get the head node of the list (it's like peeking at the first item i line)
+- add a new node to the beginning of the list.
+- print out the list values in order
+- remove a node that has a particular value
+
+Using our previous example, let's crate a linked list. 
+
+Define an init() method for the linkedList. This method should take value as an argument. Inside the init() method, set self.head_node equal to a new Node with value as its value. Then define get_head_node() method that helps us peek at the first node in the list.
+
+```python
+class LinkedList:
+  def __init__(self, value=None):
+    self.head_node = Node(value)
+  
+  def get_head_node(self):
+    return self.head_node
+``` 
+
+
