@@ -199,3 +199,7 @@ Similarly, there are two cases when adding a node to the tail of a doubly linked
 - Set the new tail’s previous pointer to the current tail
 - Set the new tail’s next pointer to null
 
+When it comes to removing the head or tail from the list, this process is still a bit more complicated than the single linked list.
+
+Removing the head involves updating the pointer at the beginning of the list. Similarly, removing the tail involves updating the pointer at the end of list. 
+
