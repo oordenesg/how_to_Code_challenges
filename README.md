@@ -187,4 +187,5 @@ Common operations on a doubl linked list my include:
 - Finding and removing a node from anywhere in the list.
 - Traversing (or traveling through) the list.
 
+If we compared this case with the previous one (Single linked list), adding an additional list is a little complicated.  When adding to the head of the doubly linked list, we first need to check if there is a current head to list. If there isn't then the list is empty, and we can simply make our new node both the head and tail of the list and set both pointers to null. 
 
