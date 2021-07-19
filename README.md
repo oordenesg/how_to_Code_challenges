@@ -201,5 +201,8 @@ Similarly, there are two cases when adding a node to the tail of a doubly linked
 
 When it comes to removing the head or tail from the list, this process is still a bit more complicated than the single linked list.
 
-Removing the head involves updating the pointer at the beginning of the list. Similarly, removing the tail involves updating the pointer at the end of list. 
+Removing the head involves updating the pointer at the beginning of the list. Similarly, removing the tail involves updating the pointer at the end of list. In the double linked list, it is also possible to remove a node from the middle of the list. Since that node is neither the head nor the tail of the list, there are two pointers that must be updated:
+
+- We must set the removed node’s preceding node’s next pointer to its following node
+- We must set the removed node’s following node’s previous pointer to its preceding node
 
