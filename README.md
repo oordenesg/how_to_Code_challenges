@@ -174,3 +174,17 @@ Lucky for us, in Python, nodes which are not referenced will be removed for us a
         else:
           current_node = next_node
 ```
+
+
+#### Doubly Linked Lists Introduction
+
+A double linked list is comprised of series of nodes. This strucutre is quite similar to a singly linked list.  In this case, each node contains data and two links to the next and previous node in the list. The head node is the node at the beginning of the list and the tail node is the node at the end of the list. 
+
+Common operations on a doubl linked list my include:
+
+- Adding nodes to both ends of the list.
+- Removing nodes from both ends of the list.
+- Finding and removing a node from anywhere in the list.
+- Traversing (or traveling through) the list.
+
+
