@@ -237,4 +237,54 @@ class DoublyLinkedList:
     self.tail_node = None
 ```
 
-In the previous sceneario (single linked list), we can add to the head of the list by checking to see if it already has a head. We then either set the new node as the head or update the head property, and link the past head to the new head.This situation is a bit different in a double linked list. This is because we have an additional tail property and is built with nodes that each have two pointers. Let's how implement this using our previous example
+In the previous sceneario (single linked list), we can add to the head of the list by checking to see if it already has a head. We then either set the new node as the head or update the head property, and link the past head to the new head.This situation is a bit different in a double linked list. This is because we have an additional tail property and is built with nodes that each have two pointers. Let's how implement this using our previous example.
+
+Define an .add_to_head() method that takes self and new_value as parameters. Inside this method create A new_head Node that takes new_value as a parameter and a current_head Node that’s set to the list’s head.
+
+
+
+```python
+class Node:
+  def __init__(self, value, next_node=None, prev_node=None):
+    self.value = value
+    self.next_node = next_node
+    self.prev_node = prev_node
+    
+  def set_next_node(self, next_node):
+    self.next_node = next_node
+    
+  def get_next_node(self):
+    return self.next_node
+
+  def set_prev_node(self, prev_node):
+    self.prev_node = prev_node
+    
+  def get_prev_node(self):
+    return self.prev_node
+  
+  def get_value(self):
+    return self.value
+    
+class DoublyLinkedList:
+  def __init__(self):
+    self.head_node = None
+    self.tail_node = None
+
+  def add_to_head(self, new_value):
+    new_head = Node(new_value)
+    current_head = self.head_node
+
+    if current_head != None:
+      current_head.set_prev_node(new_head)
+      new_head.set_next_node(current_head)
+
+    self.head_node = new_head
+
+    if self.tail_node == None:
+      self.tail_node = new_head
+
+
+
+
+
+```
