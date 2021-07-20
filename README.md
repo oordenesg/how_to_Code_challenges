@@ -204,5 +204,36 @@ When it comes to removing the head or tail from the list, this process is still 
 Removing the head involves updating the pointer at the beginning of the list. Similarly, removing the tail involves updating the pointer at the end of list. In the double linked list, it is also possible to remove a node from the middle of the list. Since that node is neither the head nor the tail of the list, there are two pointers that must be updated:
 
 - We must set the removed node’s preceding node’s next pointer to its following node
-- We must set the removed node’s following node’s previous pointer to its preceding node
+- We must set the removed node’s following node’s previous pointer to its preceding 
+
+Now that we've learned about doubly linked list, lest's see an example using Python. We are going to use a provided Node class, which you can find at the top of script.py. We’ve added a prev_node property to the class, as well as .set_prev_node() and .get_prev_node() methods. Then in our DoublyLinkedList class at the bottom of script.py, create an __init__() method (constructor) that only has self as a parameter, since each list will be empty when it’s created. Inside your __init__() method create head_node and tail_node instance variables. The nodes have no value yet, so set them to None.
+
+```python
+class Node:
+  def __init__(self, value, next_node=None, prev_node=None):
+    self.value = value
+    self.next_node = next_node
+    self.prev_node = prev_node
+    
+  def set_next_node(self, next_node):
+    self.next_node = next_node
+    
+  def get_next_node(self):
+    return self.next_node
+
+  def set_prev_node(self, prev_node):
+    self.prev_node = prev_node
+    
+  def get_prev_node(self):
+    return self.prev_node
+  
+  def get_value(self):
+    return self.value
+    
+
+class DoublyLinkedList:
+  def __init__(self):
+    self.head_node = None
+    self.tail_node = None
+```
 
