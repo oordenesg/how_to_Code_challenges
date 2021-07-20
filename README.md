@@ -237,3 +237,4 @@ class DoublyLinkedList:
     self.tail_node = None
 ```
 
+In the previous sceneario (single linked list), we can add to the head of the list by checking to see if it already has a head. We then either set the new node as the head or update the head property, and link the past head to the new head.This situation is a bit different in a double linked list. This is because we have an additional tail property and is built with nodes that each have two pointers. Let's how implement this using our previous example
