@@ -241,7 +241,11 @@ In the previous sceneario (single linked list), we can add to the head of the li
 
 Define an .add_to_head() method that takes self and new_value as parameters. Inside this method create A new_head Node that takes new_value as a parameter and a current_head Node that’s set to the list’s head.
 
+If there is a current head to the list:
+- Set current_head‘s previous node to new_head
+- Set new_head‘s next node to current_head
 
+In this part, it is important to remember to use the Node class’s .set_prev_node() and .set_next_node() methods. After this, and outside of the if statement, set the list’s head to new_head. Finally, if the list doesn’t have a tail, set the list’s tail to the new head.
 
 ```python
 class Node:
@@ -282,9 +286,4 @@ class DoublyLinkedList:
 
     if self.tail_node == None:
       self.tail_node = new_head
-
-
-
-
-
 ```
