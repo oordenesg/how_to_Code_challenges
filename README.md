@@ -287,3 +287,5 @@ class DoublyLinkedList:
     if self.tail_node == None:
       self.tail_node = new_head
 ```
+
+Now its time to add the tail. Remember that doubly linked list have a tail property. Given this, we don’t have to iterate through the entire list to add to the tail like we did with a singly linked list. The new method will mirror what we did in our .add_to_head() method:
