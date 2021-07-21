@@ -295,7 +295,7 @@ Now its time to add the tail. Remember that doubly linked list have a tail prope
 - Update the tail property to be the new tail
 - Finally, if there isn’t a current head to the list (meaning the list was empty): Update the head property to be the new tail since that node will be both the head and tail
 
-In order to see this process, let's define an .add_to_tail() method that takes self and new_value as parameters. Inside this method, create a new_tail Node that takes new_value as a parameter and a current_tail Node that’s set to the list’s tail.  Then if there is a current tail to the list, set the current tail’s next node to new_tail and set new_tail‘s previous node to the current tail.
+In order to see this process, let's define an .add_to_tail() method that takes self and new_value as parameters. Inside this method, create a new_tail Node that takes new_value as a parameter and a current_tail Node that’s set to the list’s tail.  Then if there is a current tail to the list, set the current tail’s next node to new_tail and set new_tail‘s previous node to the current tail. Then, outside your if statement, set the list’s tail to the new_tail and finally if the list doesn’t have a head, set the list’s head to the new tail.
 
 ```python
 class Node:
