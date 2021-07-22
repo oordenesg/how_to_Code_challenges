@@ -3,6 +3,31 @@ Learn how to solve the most common coding challenges
 
 In This repository we will cover the theorical part of the most common coding challenges. 
 
+Normally, juniors and senior developers must pass a technical interview to be hired. These interviews evaluate their ability to write. Technical interviews take many forms:
+
+- Writing code alongside an employee of the company.
+- testing online with a third-party service.
+- Take-home challenges spanning several days.
+
+## Technical Interviews: White Boarding 
+
+A whiteboarding technical interview requires to plan and code the solution by hand. Candidates must comunicate their ideas or code without the assitance of a text editor or web browser.
+
+The steps to pass a white boarding interview are:
+1. Clarify the problem.
+2. Create inputs.
+3. Outline the solution.
+4. Code the solution.
+5. Test the solution.
+6. Analyze the solution.
+
+Let's check these steps in more detail.
+
+1. Clarify the problem
+
+In this step, the interviewee must be confident they understand the dimension of the problem. In the software development world, ambiguity is one most common things. Even when the need is clear, a feature could have dozens of possible implementations. The key of this step is to repeat the question back to the interviewer in your own words. This gives you a momento to think about the problem and clarify your own ideas. In this step it is also important ask every clarifying question that comes to mind.
+
+
 ## Concepts
 
 ### Nodes
