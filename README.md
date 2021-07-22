@@ -43,6 +43,9 @@ Now, it is time to write our solution. This is collaborative process. Refer to y
 
 Now use the test inputs to walk through the evaluation of your code. Here, you can write out any temporary variables on the board and update them when they change during execution. This is a good opportunity to showcase your communication. If during this process you catch an error, do not panic! Mistakes happen. This is the right time to explain the issue and talk through what you can do to fix the bug. 
 
+#### 6. Analyze the solution.
+
+You’re satisfied with your implementation and you’ve demonstrated how it works, but you’re not quite done. Analyze the time and space complexity of the solution. With this step you are demonstrating that you care about the efficiency of your code. Explain your code’s big O notation. If you can optimize to a more efficient runtime, explain how that would work. If you can’t optimize, explain why it’s not possible.
 
 ## Concepts
 
