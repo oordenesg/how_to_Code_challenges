@@ -27,6 +27,10 @@ Let's check these steps in more detail.
 
 In this step, the interviewee must be confident they understand the dimension of the problem. In the software development world, ambiguity is one most common things. Even when the need is clear, a feature could have dozens of possible implementations. The key of this step is to repeat the question back to the interviewer in your own words. This gives you a momento to think about the problem and clarify your own ideas. In this step it is also important ask every clarifying question that comes to mind.
 
+2. Create inputs.
+
+When the question is clear, we can start to create concrete inputs and outputs. You may staill be unclear how to solve the problem in code but we know that given an input *X*, our function should return an output *Y*. For example: Let's write a function which capitalizes the first letter of an input string. The first input could be 'apple' and our function should return 'Apple'. On the other hand, if our input is 'Apple' our function should return 'Apple'. Now, it is important to think about *edge cases* or inputs which do not reflect a commmon sceneario. What could happen if our input is *null*. These kind of scenarios are *edge cases*. 
+
 
 ## Concepts
 
