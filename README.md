@@ -35,7 +35,12 @@ When the question is clear, we can start to create concrete inputs and outputs. 
 
 Now it is time to break down the problem by category. In this step we need to analyze different possibilities. Is this a searching question? Can we sort the input and will that help? Does this problem sound like it can be modeled as a graph, with vertices and connected edges?. In this case it is importan to understand the application of different data structures. In this step, the interviewer may make suggestion on how to proceed. After a couple of recommendations and when you and the interviewer are satisfied with a possible solucion, write the steps next to your input. Then, follow these steps as you arite code on the board. 
 
-##### 4. Code the solution.
+#### 4. Code the solution.
+
+Now, it is time to write our solution. This is collaborative process. Refer to your outline and explain the step you're implementing.  In this step, try to avoid writing the code in silence or narrating at low level. When you're finished with the implementation, look it over for any mistake syntax or logical errors. 
+
+#### 5. Test the solution.
+
 
 ## Concepts
 
