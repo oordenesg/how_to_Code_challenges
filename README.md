@@ -47,6 +47,17 @@ Now use the test inputs to walk through the evaluation of your code. Here, you c
 
 You’re satisfied with your implementation and you’ve demonstrated how it works, but you’re not quite done. Analyze the time and space complexity of the solution. With this step you are demonstrating that you care about the efficiency of your code. Explain your code’s big O notation. If you can optimize to a more efficient runtime, explain how that would work. If you can’t optimize, explain why it’s not possible.
 
+## Technical interview problems in Python
+
+### List
+
+List are fundamental data type in Python. In general, projects use lists to store data in sequential order. In interviews, it is expect to face at least one questions that requires working with lists. The first problem, one the most common ones, is reate a list or move elements forward by a number of k spaces. As we saw previously, it is important to clarify some questions.
+
+*Should I account for negatives inputs?* The rotation input will always be positive
+*What if the rotation is greater than the list lenght?* Continue wrapping. The rotated list would be the same as the original when k is equal to the lenght.
+
+
+
 ## Concepts
 
 ### Nodes
