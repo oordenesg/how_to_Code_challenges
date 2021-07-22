@@ -41,6 +41,8 @@ Now, it is time to write our solution. This is collaborative process. Refer to y
 
 #### 5. Test the solution.
 
+Now use the test inputs to walk through the evaluation of your code. Here, you can write out any temporary variables on the board and update them when they change during execution. This is a good opportunity to showcase your communication. If during this process you catch an error, do not panic! Mistakes happen. This is the right time to explain the issue and talk through what you can do to fix the bug. 
+
 
 ## Concepts
 
