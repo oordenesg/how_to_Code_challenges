@@ -23,14 +23,19 @@ The steps to pass a white boarding interview are:
 
 Let's check these steps in more detail.
 
-1. Clarify the problem
+#### 1. Clarify the problem
 
 In this step, the interviewee must be confident they understand the dimension of the problem. In the software development world, ambiguity is one most common things. Even when the need is clear, a feature could have dozens of possible implementations. The key of this step is to repeat the question back to the interviewer in your own words. This gives you a momento to think about the problem and clarify your own ideas. In this step it is also important ask every clarifying question that comes to mind.
 
-2. Create inputs.
+#### 2. Create inputs.
 
 When the question is clear, we can start to create concrete inputs and outputs. You may staill be unclear how to solve the problem in code but we know that given an input *X*, our function should return an output *Y*. For example: Let's write a function which capitalizes the first letter of an input string. The first input could be 'apple' and our function should return 'Apple'. On the other hand, if our input is 'Apple' our function should return 'Apple'. Now, it is important to think about *edge cases* or inputs which do not reflect a commmon sceneario. What could happen if our input is *null*. These kind of scenarios are *edge cases*. 
 
+#### 3. Outline the solution.
+
+Now it is time to break down the problem by category. In this step we need to analyze different possibilities. Is this a searching question? Can we sort the input and will that help? Does this problem sound like it can be modeled as a graph, with vertices and connected edges?. In this case it is importan to understand the application of different data structures. In this step, the interviewer may make suggestion on how to proceed. After a couple of recommendations and when you and the interviewer are satisfied with a possible solucion, write the steps next to your input. Then, follow these steps as you arite code on the board. 
+
+##### 4. Code the solution.
 
 ## Concepts
 
