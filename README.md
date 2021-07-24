@@ -75,7 +75,25 @@ rotate(list, 0)
 
 In some cases it is necessary to optimize the solution. This means, reducing the memory required or reducing the number of instructions the computer must execute. In some cases, we need to rethink the approach of a question or think of other functions that could help reduce computational time. 
 
-In the last exercise, our function requires *O(N)* space becase a new list is made with copies of each value and O(N) time because every value is visited while copying. N represents the number of values in the list. For space complexity, we can optimize by constructing in-place solutions, meaning we don’t create any additional data structures for storing values.
+In the last exercise, our function requires *O(N)* space becase a new list is made with copies of each value and O(N) time because every value is visited while copying. N represents the number of values in the list. For space complexity, we can optimize by constructing in-place solutions, meaning we don’t create any additional data structures for storing values. Write a function rotate(), with the parameters my_list and num_rotations. rotate() should return the same input list rotated num_rotations backward.
+
+```python
+def rev(lst, low, high):
+  while low < high:
+    lst[low], lst[high] = lst[high], lst[low]
+    high -= 1
+    low += 1
+  return lst
+
+def rotate(my_list, num_rotations):
+  # first half
+  rev(my_list, 0, num_rotations - 1)
+  # second half
+  rev(my_list, num_rotations, len(my_list) - 1)
+  # whole list
+  rev(my_list, 0, len(my_list) - 1)
+  return my_list
+```
 
 
 
