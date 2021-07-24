@@ -71,8 +71,14 @@ def rotate_alternative(lst, degree):
 list = ['a', 'b', 'c', 'd', 'e', 'f']
 rotate(list, 0)
 # ['a', 'b', 'c', 'd', 'e', 'f']
-
 ``` 
+
+In some cases it is necessary to optimize the solution. This means, reducing the memory required or reducing the number of instructions the computer must execute. In some cases, we need to rethink the approach of a question or think of other functions that could help reduce computational time. 
+
+In the last exercise, our function requires *O(N)* space becase a new list is made with copies of each value and O(N) time because every value is visited while copying. N represents the number of values in the list. For space complexity, we can optimize by constructing in-place solutions, meaning we don’t create any additional data structures for storing values.
+
+
+
 
 
 ## Concepts
