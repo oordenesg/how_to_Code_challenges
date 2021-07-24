@@ -56,6 +56,23 @@ List are fundamental data type in Python. In general, projects use lists to stor
 *Should I account for negatives inputs?* The rotation input will always be positive
 *What if the rotation is greater than the list lenght?* Continue wrapping. The rotated list would be the same as the original when k is equal to the lenght.
 
+In our first problem, we want to rotate a list or move elements forward in a list by a number of spaces k.  In  this exercise, Write a function *rotate()* with the parameters my_list and num_rotations.
+
+```python
+def rotate(l, k):
+  for i in range(k):
+    l.insert(0, l.pop())
+  return l
+
+def rotate_alternative(lst, degree):
+  rotation = degree % len(lst)
+  return lst[-rotation:] + lst[:-rotation]
+  
+list = ['a', 'b', 'c', 'd', 'e', 'f']
+rotate(list, 0)
+# ['a', 'b', 'c', 'd', 'e', 'f']
+
+``` 
 
 
 ## Concepts
